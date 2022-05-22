@@ -1,0 +1,52 @@
+// Header
+@mixin nav_link {
+  text-align: center;
+  font-size: 13px;
+  color: $white;
+  text-transform: uppercase;
+  background: $bg_sky;
+  box-shadow: 0 4px 4px $dark_thin;
+  border-radius: 47px;
+  border: 0;
+}
+
+@mixin list_style {
+  display: $flex;
+  align-items: center;
+  margin: 0;
+}
+
+// Topbar
+
+@mixin scl_icn_clr {
+  color: $link_color;
+}
+
+// Breadcrumb
+
+@mixin breadcrumb {
+  background-color: $dark_light;
+  padding: 1rem 0;
+  height: 100px;
+}
+
+// button
+@mixin btn-white {
+  background-color: $white;
+  border: 1px solid $white_dark;
+  color: $dark_heavy;
+}
+
+// Text Decoration
+@mixin text_deco {
+  text-decoration: $none;
+}
+
+// Text Align
+@mixin text_left {
+  text-align: left;
+}
+
+@mixin text_right {
+  text-align: right;
+}

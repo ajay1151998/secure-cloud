@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
+@import "_var";
+@import "_mixin";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary_font_family;
+}
+p,
+span {
+  font-family: $secondary_font_family;
+}
+
+a {
+  font-family: $secondary_font_family;
+  color: $dark_blue;
+  @include text_deco;
+}
+
+ol,
+ul {
+  list-style-type: $none;
+}
+
+.topbar {
+  display: $flex;
+  background-color: #09e5ab;
+  padding: 8px 30px;
+
+  ul.top_list {
+    @include list_style;
+
+    li {
+      padding: 0 5px;
+    }
+  }
+
+  .right_top {
+    display: $flex;
+    justify-content: flex-end;
+  }
+
+  i.topbar_lft_icn {
+    color: $link_color;
+  }
+
+  a.topbar_links {
+    color: $link_color;
+    font-family: $secondary_font_family;
+    @include text_deco;
+    font-weight: 500;
+    &:hover {
+      color: $link_hover_color;
+    }
+  }
+  i.social_icn {
+    @include scl_icn_clr;
+  }
+
+  @media screen and (max-width: $medium) {
+    display: $none;
+  }
+  @media screen and (max-width: $small) {
+    display: $none;
+  }
+}
+
+.header {
+  background-color: $header_bg;
+
+  a {
+    img.logo {
+      height: 5rem;
+    }
+  }
+  li.nav-item {
+    margin-left: 18px;
+    a.nav-link {
+      font-family: $secondary_font_family;
+      font-weight: 500;
+      font-size: 17px;
+    }
+    .login_font {
+      @include nav_link;
+    }
+  }
+  a img {
+    height: 43px;
+  }
+  li.logged-item {
+    a.nav-link {
+      align-items: center;
+      display: inline-flex;
+      font-size: 14px;
+      line-height: 85px;
+      padding: 0 10px;
+      .dropdown-toogle {
+        &::after {
+          border-top: 0;
+          border-left: 0;
+          border-bottom: 2px solid #757575;
+          border-right: 2px solid #757575;
+          content: "";
+          height: 8px;
+          display: inline-block;
+          pointer-events: none;
+          transform-origin: 66% 66%;
+          transform: rotate(45deg);
+          transition: all 0.15s ease-in-out;
+          width: 8px;
+          vertical-align: 2px;
+          margin-left: 10px;
+        }
+      }
+      span.user-img {
+        display: inline-block;
+        position: relative;
+        img {
+          height: 31px;
+          object-fit: cover;
+          width: 31px;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 0;
+        border: 7px solid #fff;
+        border-color: transparent transparent #fff #fff;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        box-shadow: -2px 2px 2px -1px #0000001a;
+      }
+      .user-header {
+        display: flex;
+        padding: 10px 15px;
+        .avatar {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .user-text {
+          margin-left: 10px;
+          h6 {
+            font-size: 15px;
+            margin-bottom: 2px;
+          }
+        }
+      }
+      a.dropdown-item {
+        border-top: 1px solid #f0f0f0;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $dark_light;
+  padding: 1rem 0;
+
+  .footer_logo img {
+    height: 8rem;
+  }
+
+  ul.footer_list {
+    @include list_style;
+  }
+
+  i.social_icn {
+    @include scl_icn_clr;
+  }
+
+  li {
+    padding: 0 5px;
+  }
+
+  .patient_sec,
+  .doctor_sec,
+  .contact_info {
+    p {
+      color: $white;
+      font-family: $primary_font_family;
+      font-size: 15px;
+    }
+
+    ul {
+      color: $white;
+    }
+
+    li a {
+      color: $white;
+      @include text_deco;
+    }
+  }
+
+  .contact_info {
+    margin-top: -25px;
+    ul {
+      color: $white;
+      list-style-type: none;
+    }
+  }
+}
+
+// Page Content
+
+.page_content {
+  @include breadcrumb;
+  p {
+    color: $white;
+  }
+  .sort_by {
+    float: right;
+    .sort_title {
+      color: $white;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+    .sortby_fliter {
+      display: inline-block;
+      width: 120px;
+    }
+  }
+}

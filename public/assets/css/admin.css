@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  font-family: "Ubuntu", sans-serif;
+  color: darkblue;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* .admin_page {
+  background: url();
+  height: 94vh;
+} */
+
+@media screen and (max-width: 600px) {
+  .admin_page {
+    height: 100vh;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .admin_page {
+    background-size: 300px;
+  }
+}
+
+.admin_page .admin_page_logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .admin_page .admin_page_logo {
+    margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .admin_page .admin_page_logo {
+    margin: 50px 0;
+  }
+}
+
+.admin_page .admin_page_logo img {
+  height: 165px;
+}
+
+.admin_page .card_list {
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  .admin_page .card_list {
+    margin-top: 40px;
+    height: 60vh !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .admin_page .card_list {
+    margin-top: 40px;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    margin-bottom: 20px;
+  }
+}
+
+.admin_page .card_list .card-item {
+  width: 315px;
+  height: 440px;
+}
+
+/* .admin_page .card_list .card-inner {
+  border: 10px solid #0d6efd;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px 1px #0d6efd;
+  box-shadow: 0px 0px 15px 1px #0d6efd;
+} */
+
+.admin_page .back_to_home {
+  margin-top: -140px;
+}
+
+@media screen and (max-width: 600px) {
+  .admin_page .back_to_home {
+    margin-top: 50px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .admin_page .back_to_home {
+    margin: 50px 0;
+  }
+}
+
+/* Custom Stylesheet */
+.admn_btn a {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=admin.css.map */
+
+/* Custom Stylesheet */
+
+a.anchr-main-inner-box {
+  cursor: pointer;
+}
